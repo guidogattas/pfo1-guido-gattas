@@ -1,76 +1,88 @@
-# pfo1-guido-gattas
-PFO1 Guido Gattás IFTS - Comisión B
-# Landing de Portafolio Personal - PFO1
+# PFO1 - Guido Gattás
 
-Landing page personal desarrollada para la primera Práctica Formativa Obligatoria (PFO1) de la materia **Desarrollo de Sistemas Web - Front End (2do Cuatrimestre 2026)**.
+Landing page personal realizada para la primera Práctica Formativa Obligatoria (PFO1) de la materia **Desarrollo de Sistemas Web - Front End**, correspondiente al 2do Cuatrimestre de 2026.
 
-* **Deploy en Vercel:** [https://tu-proyecto.vercel.app](https://tu-proyecto.vercel.app) *(Reemplazar con la URL final de Vercel)*
-* **Perfil de GitHub:** [https://github.com/guidogattas](https://github.com/guidogattas)
+La página funciona como un pequeño portfolio donde presento mi perfil, mis conocimientos, formación, experiencia y una forma de contacto.
 
----
-
-## 🎯 Decisiones de Diseño y Arquitectura Técnica
-
-### 1. Semántica y Accesibilidad (HTML5)
-* Se estructuró el documento utilizando etiquetas semánticas estándar: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>` y `<footer>`.
-* Se implementaron roles ARIA pertinentes (`role="banner"`, `role="navigation"`, `role="main"`, `role="contentinfo"`) y atributos `aria-labelledby` y `aria-label` para facilitar la navegación mediante lectores de pantalla.
-* En el formulario de contacto, cada campo cuenta con su correspondiente etiqueta `<label>` vinculada explícitamente a través del atributo `for`.
-
-### 2. Maquetación (CSS Grid y Flexbox)
-* **Flexbox:** Utilizado en componentes unidimensionales como la barra de navegación, la botonera de acciones, el footer y los grupos de etiquetas de tecnologías (`tags`).
-* **CSS Grid:** Utilizado en la disposición bidimensional del layout principal: la división de la sección *Hero* y la distribución adaptable de las tarjetas de habilidades y trayectoria académica mediante `repeat(auto-fit, minmax(300px, 1fr))`.
-* **Variables CSS:** Se centralizaron colores, tipografías, transiciones y radios de borde en la pseudoclase `:root` para mantener consistencia visual y facilitar el mantenimiento.
-
-### 3. Tipografía y Estilo
-* Se seleccionaron dos familias tipográficas desde Google Fonts: **Montserrat** (pesos 700 y 800) para jerarquizar encabezados con impacto, e **Inter** (pesos 300, 400, 500 y 600) para asegurar legibilidad en el cuerpo del texto.
+* **Deploy:** https://tu-proyecto.vercel.app *(reemplazar por la URL final de Vercel)*
+* **GitHub:** https://github.com/guidogattas
 
 ---
 
-## 🤖 Declaración de Uso de Inteligencia Artificial
+## Decisiones de diseño
 
-* **Herramientas utilizadas:** Gemini (Google).
-* **Tipo de plan:** Plan gratuito.
-* **Experiencia previa con la herramienta:** Intermedia; utilizada frecuentemente para asistencia en desarrollo de software, optimización de código y estructuración de proyectos.
-* **Propósito y alcance de uso:**
-  * Estructuración inicial del boilerplate HTML y propuesta de layout en CSS cumpliendo con los puntos de la rúbrica docente.
-* **Criterio propio, adaptaciones y revisiones realizadas:**
-  * Se revisó y ajustó la semántica del HTML, asegurando el orden correcto de encabezados `<h1>` a `<h3>`.
-  * Se personalizaron las variables de color y espaciados en CSS para lograr una estética oscura moderna (*dark theme*) con contraste accesible.
-  * Se integró toda la información real de trayectoria académica, cursos y experiencia laboral sin delegar la redacción del contenido a la IA.# Landing de Portafolio Personal - PFO1
+### HTML
 
-Landing page personal desarrollada para la primera Práctica Formativa Obligatoria (PFO1) de la materia **Desarrollo de Sistemas Web - Front End (2do Cuatrimestre 2026)**.
+Utilicé HTML5 y traté de mantener una estructura semántica utilizando elementos como `header`, `nav`, `main`, `section`, `article` y `footer`.
 
-* **Deploy en Vercel:** [https://tu-proyecto.vercel.app](https://tu-proyecto.vercel.app) *(Reemplazar con la URL final de Vercel)*
-* **Perfil de GitHub:** [https://github.com/guidogattas](https://github.com/guidogattas)
+También agregué atributos `alt` a las imágenes y etiquetas `label` en el formulario para mejorar la accesibilidad.
 
----
+Además, incluí algunos roles ARIA donde me pareció útil, como en la navegación y en las distintas partes principales de la página.
 
-## 🎯 Decisiones de Diseño y Arquitectura Técnica
+### CSS
 
-### 1. Semántica y Accesibilidad (HTML5)
-* Se estructuró el documento utilizando etiquetas semánticas estándar: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>` y `<footer>`.
-* Se implementaron roles ARIA pertinentes (`role="banner"`, `role="navigation"`, `role="main"`, `role="contentinfo"`) y atributos `aria-labelledby` y `aria-label` para facilitar la navegación mediante lectores de pantalla.
-* En el formulario de contacto, cada campo cuenta con su correspondiente etiqueta `<label>` vinculada explícitamente a través del atributo `for`.
+Para organizar el diseño utilicé **Flexbox y CSS Grid**.
 
-### 2. Maquetación (CSS Grid y Flexbox)
-* **Flexbox:** Utilizado en componentes unidimensionales como la barra de navegación, la botonera de acciones, el footer y los grupos de etiquetas de tecnologías (`tags`).
-* **CSS Grid:** Utilizado en la disposición bidimensional del layout principal: la división de la sección *Hero* y la distribución adaptable de las tarjetas de habilidades y trayectoria académica mediante `repeat(auto-fit, minmax(300px, 1fr))`.
-* **Variables CSS:** Se centralizaron colores, tipografías, transiciones y radios de borde en la pseudoclase `:root` para mantener consistencia visual y facilitar el mantenimiento.
+Flexbox lo utilicé principalmente para elementos como la navegación, los botones, el footer y las etiquetas de tecnologías.
 
-### 3. Tipografía y Estilo
-* Se seleccionaron dos familias tipográficas desde Google Fonts: **Montserrat** (pesos 700 y 800) para jerarquizar encabezados con impacto, e **Inter** (pesos 300, 400, 500 y 600) para asegurar legibilidad en el cuerpo del texto.
+CSS Grid lo utilicé para organizar las secciones principales y las tarjetas de habilidades y formación. También utilicé `auto-fit` y `minmax()` para que las tarjetas se adapten al tamaño de la pantalla.
+
+El diseño es responsive para que la página pueda verse correctamente tanto en computadora como en dispositivos más chicos.
+
+También utilicé variables CSS para guardar colores, tipografías y algunos valores que se repiten, lo que facilita modificar el diseño.
+
+### Tipografía y estilo
+
+Elegí un diseño oscuro y moderno, intentando mantener una buena lectura y contraste entre los diferentes elementos.
+
+Utilicé **Montserrat** para los títulos y **Inter** para el contenido general. La idea fue generar una diferencia clara entre títulos y textos sin que la página quede demasiado cargada.
+
+También agregué transiciones y animaciones pequeñas para darle algo más de interacción a la página sin afectar su funcionamiento.
 
 ---
 
-## 🤖 Declaración de Uso de Inteligencia Artificial
+## Uso de Inteligencia Artificial
 
-* **Herramientas utilizadas:** Gemini (Google).
-* **Tipo de plan:** Plan gratuito.
-* **Experiencia previa con la herramienta:** Intermedia; utilizada frecuentemente para asistencia en desarrollo de software, optimización de código y estructuración de proyectos.
-* **Propósito y alcance de uso:**
-  * Estructuración inicial del boilerplate HTML y propuesta de layout en CSS cumpliendo con los puntos de la rúbrica docente.
-* **Criterio propio, adaptaciones y revisiones realizadas:**
-  * Se revisó y ajustó la semántica del HTML, asegurando el orden correcto de encabezados `<h1>` a `<h3>`.
-  * Se personalizaron las variables de color y espaciados en CSS para lograr una estética oscura moderna (*dark theme*) con contraste accesible.
-  * Se integró toda la información real de trayectoria académica, cursos y experiencia laboral sin delegar la redacción del contenido a la IA.
-  
+Para realizar este proyecto utilicé **Gemini (Google)** como herramienta de apoyo.
+
+El plan utilizado fue el **gratuito** y ya tenía experiencia previa utilizando esta herramienta, principalmente para consultar dudas relacionadas con programación y desarrollo de software.
+
+La utilicé principalmente para:
+
+* Consultar ideas para la estructura inicial de la página.
+* Obtener una propuesta inicial para el HTML y CSS.
+* Conseguir una opción de envío de formulario sin necesidad de BBDD
+* Revisar posibles mejoras en la estructura y accesibilidad.
+
+El código generado inicialmente no fue utilizado directamente sin modificaciones. Fui revisándolo y adaptándolo a las necesidades de mi proyecto.
+
+Entre los cambios que realicé están:
+
+* Modificar la estructura del HTML.
+* Revisar la semántica y el orden de los encabezados.
+* Cambiar colores, tamaños, espacios y estilos, había problemas con algunos elementos que se salían de la pantalla.
+* Adaptar el diseño a la estética que quería para mi portfolio.
+* Incorporar mis propios datos de formación, cursos y experiencia laboral.
+* Revisar el código y modificarlo cuando no se ajustaba a lo que necesitaba.
+* Agregar y ajustar los elementos de accesibilidad y responsive.
+
+La información personal incluida en la página corresponde a mis propios datos y fue incorporada por mí.
+
+---
+
+## Imágenes
+
+Las imágenes utilizadas en la página corresponden a material propio e imágenes procesadas para utilizarlas dentro del diseño.
+
+
+---
+
+## Publicación
+
+Una vez terminado el proyecto, la landing fue publicada utilizando **Vercel**.
+
+El repositorio es público y contiene los archivos necesarios para ejecutar y visualizar el proyecto.
+
+**Repositorio:** https://github.com/guidogattas
+
+**Sitio publicado:** https://pfo1-guido-gattas.vercel.app/

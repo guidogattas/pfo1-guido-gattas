@@ -45,7 +45,13 @@
         <section id="inicio" class="hero" aria-labelledby="hero-title">
             <div class="container hero-grid">
                 <div class="hero-text">
-                    <div class="status-tag">● Disponible para trabajar</div>
+                    <div class="hero-header-user">
+                        <!-- Avatar digital ilustrado con IA -->
+                        <img src="images/GG-OMSafr-E.png"
+                            alt="Avatar digital ilustrado de Guido Gattás"
+                            class="hero-avatar">
+                        <div class="status-tag">● Disponible para trabajar</div>
+                    </div>
                     <h1 id="hero-title">Desarrollador<br><span
                             class="highlight">Fullstack</span></h1>
                     <p class="hero-subtitle">React JS · React Native · Node.js
@@ -67,7 +73,7 @@
                     </div>
                 </div>
                 <div class="hero-card-wrapper">
-                    <!-- Comentario explicativo 1: Tarjeta retro con datos personales y de contacto -->
+                    <!-- Comentario explicativo 1: Tarjeta retro con foto de perfil real y atributos de accesibilidad -->
                     <div class="terminal-card"
                         aria-label="Ficha de presentación">
                         <div class="terminal-bar">
@@ -77,6 +83,12 @@
                             <span class="terminal-title">Perfil Personal</span>
                         </div>
                         <div class="terminal-body">
+                            <div class="profile-photo-container">
+                                <!-- Fotografía de perfil real -->
+                                <img src="images/Guido-IICUcsiR.png"
+                                    alt="Fotografía de perfil de Guido Gattás"
+                                    class="profile-photo">
+                            </div>
                             <p class="code-line"><span
                                     class="c-accent">Nombre:</span></p>
                             <p class="code-output">Guido Gattás</p>
@@ -193,17 +205,18 @@
                         <h3>Administrativo de Recursos Humanos</h3>
                         <p class="institution">Gobierno de la Ciudad de Buenos
                             Aires</p>
-                        <p>Supervisión y coordinación de equipos de trabajo,
-                            gestión de bases de datos en SQL, expedientes
-                            electrónicos (SADE), oficios judiciales, responsable
-                            de presentismos e incidencias,
-                            gestión de evaluaciones de desempeño.</p>
+                        <p>Coordinación de equipos de trabajo y administración
+                            de bases de datos en SQL[cite: 2]. Gestión integral
+                            de expedientes electrónicos (SADE), oficios
+                            judiciales, control de presentismo, seguimiento de
+                            incidencias y administración de evaluaciones de
+                            desempeño[cite: 2].</p>
                     </article>
                 </div>
             </div>
         </section>
-        <!-- 4. Formulario de Contacto -->
-        <!-- Comentario explicativo 3: Formulario estructurado con etiquetas label explícitas asociadas a cada input -->
+        <!-- 4. Formulario de Contacto (Nativo mailto) -->
+        <!-- Comentario explicativo 3: Formulario estructurado con etiquetas label explícitas asociadas y action mailto nativo -->
         <section id="contacto" class="contact-section"
             aria-labelledby="contact-title">
             <div class="container">
@@ -221,31 +234,35 @@
                             <p class="section-subtitle">Completá el formulario
                                 para enviarme un mensaje directo</p>
                         </div>
-                        <form class="contact-form" action="#" method="POST">
+                        <!-- Envío nativo por correo electrónico sin intermediarios -->
+                        <form class="contact-form"
+                            action="https://formsubmit.co/guido.gattas@gmail.com"
+                            method="POST">
                             <div class="form-group">
                                 <label for="nombre">Nombre completo</label>
-                                <input type="text" id="nombre" name="nombre"
+                                <input type="text" id="nombre" name="Nombre"
                                     placeholder="Tu nombre" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Correo electrónico</label>
-                                <input type="email" id="email" name="email"
+                                <input type="email" id="email" name="Email"
                                     placeholder="tu-email@ejemplo.com" required>
                             </div>
                             <div class="form-group">
                                 <label for="asunto">Asunto</label>
-                                <input type="text" id="asunto" name="asunto"
+                                <input type="text" id="asunto" name="Asunto"
                                     placeholder="Motivo de tu mensaje" required>
                             </div>
                             <div class="form-group">
                                 <label for="mensaje">Mensaje</label>
-                                <textarea id="mensaje" name="mensaje" rows="4"
+                                <textarea id="mensaje" name="Mensaje" rows="4"
                                     placeholder="Escribí tu mensaje acá..."
                                     required></textarea>
                             </div>
                             <button type="submit"
-                                class="btn btn-primary btn-submit">Enviar
-                                Mensaje</button>
+                                class="btn btn-primary btn-submit">
+                                Enviar Mensaje
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -253,7 +270,7 @@
         </section>
     </main>
     <!-- Footer Semántico -->
-    <!-- Comentario explicativo 4: Footer con enlaces directos a perfiles sociales -->
+    <!-- Comentario explicativo 4: Footer con enlaces directos a perfiles sociales y atributos de seguridad 'rel' -->
     <footer class="footer" role="contentinfo">
         <div class="container footer-content">
             <p>&copy; 2026 Guido Gattás. Todos los derechos reservados.</p>
