@@ -1,0 +1,497 @@
+/* ==========================================================================
+   1. VARIABLES CSS (Custom Properties) & RESET
+   ========================================================================== */
+:root {
+    --bg-main: #0b0f19;
+    --bg-surface: #111827;
+    --bg-surface-hover: #1f2937;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-color-focus: #3b82f6;
+
+    --text-primary: #f9fafb;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --accent-glow: rgba(59, 130, 246, 0.18);
+    --badge-bg: rgba(59, 130, 246, 0.12);
+
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   2. CONTENEDORES Y TIPOGRAFÍA BASE
+   ========================================================================== */
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.highlight {
+    color: var(--accent);
+}
+
+.section-title-wrapper {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title-wrapper h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+}
+
+/* ==========================================================================
+   3. BOTONES Y COMPONENTES
+   ========================================================================== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.6rem;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    color: #ffffff;
+    box-shadow: 0 4px 14px var(--accent-glow);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--bg-surface-hover);
+    border-color: var(--text-secondary);
+    transform: translateY(-2px);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    background-color: var(--badge-bg);
+    color: var(--accent);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+/* ==========================================================================
+   4. HEADER & NAVEGACIÓN (Flexbox)
+   ========================================================================== */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(11, 15, 25, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.8rem;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+/* ==========================================================================
+   5. HERO SECTION (Flexbox / Grid Combinado)
+   ========================================================================== */
+.hero {
+    padding: 6rem 0 5rem;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin-bottom: 0.8rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.hero-desc {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    max-width: 580px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Hero Profile Card */
+.profile-card {
+    background: linear-gradient(145deg, var(--bg-surface), #151e30);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    transition: var(--transition);
+}
+
+.profile-card:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+    transform: translateY(-4px);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.avatar-placeholder {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.card-name {
+    font-size: 1.25rem;
+}
+
+.card-role {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.quick-info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+}
+
+.quick-info strong {
+    color: var(--text-primary);
+}
+
+/* ==========================================================================
+   6. SECCIÓN HABILIDADES (CSS Grid)
+   ========================================================================== */
+.skills-section, .journey-section {
+    padding: 5rem 0;
+}
+
+.skills-grid, .journey-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card, .journey-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.skill-card:hover, .journey-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card h3, .journey-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.card-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.tags-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.tag {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.skill-card:hover .tag {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.25);
+}
+
+/* ==========================================================================
+   7. SECCIÓN TRAYECTORIA
+   ========================================================================== */
+.journey-period {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.institution {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.journey-card p:last-child {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   8. FORMULARIO DE CONTACTO
+   ========================================================================== */
+.contact-section {
+    padding: 5rem 0 6rem;
+}
+
+.contact-card {
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2.8rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background-color: var(--bg-main);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--border-color-focus);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.btn-submit {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* ==========================================================================
+   9. FOOTER
+   ========================================================================== */
+.footer {
+    border-top: 1px solid var(--border-color);
+    padding: 2.5rem 0;
+    background-color: var(--bg-main);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+/* ==========================================================================
+   10. MEDIA QUERIES (Diseño Responsive)
+   ========================================================================== */
+@media (max-width: 868px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .nav-list {
+        display: none; /* Simplificado para vista móvil */
+    }
+}
+
+@media (max-width: 580px) {
+    .contact-card {
+        padding: 1.8rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
