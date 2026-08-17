@@ -6,17 +6,18 @@
     <meta name="description"
         content="Portafolio personal de Guido Gattás - Programador Fullstack">
     <title>Guido Gattás | Portafolio Personal</title>
-    <!-- Google Fonts: Space Mono y VT323 -->
+    <!-- Fuentes utilizadas para darle el estilo de la página -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=VT323&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Imagen que aparece en la pestaña del navegador -->
     <link rel="icon" type="image/png" href="images/GG-OMSafr-E.png">
 </head>
 <body>
-    <!-- Header y Navegación principal -->
+    <!-- Encabezado con el menú principal de la página -->
     <header class="header" role="banner">
         <div class="container nav-container">
             <a href="#" class="logo">
@@ -42,20 +43,22 @@
         </div>
     </header>
     <main id="main-content" role="main">
-        <!-- 1. Hero Section -->
+        <!-- Presentación principal y acceso al perfil de GitHub -->
         <section id="inicio" class="hero" aria-labelledby="hero-title">
             <div class="container hero-grid">
                 <div class="hero-text">
                     <div class="hero-header-user">
-                        <!-- Avatar digital ilustrado con IA -->
                         <img src="images/GG-OMSafr-E.png"
                             alt="Avatar digital ilustrado de Guido Gattás"
                             class="hero-avatar">
                         <div class="status-tag">● Disponible para trabajar</div>
                     </div>
-                    <h1 id="hero-title">Desarrollador<br><span
-                            class="highlight">Fullstack</span></h1>
-                    <p class="hero-subtitle">React JS · React Native · Node.js
+                    <h1 id="hero-title">
+                        Desarrollador<br>
+                        <span class="highlight">Fullstack</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        React JS · React Native · Node.js
                     </p>
                     <p class="hero-desc">
                         ¡Hola! Soy Guido. Me especializo en crear aplicaciones
@@ -65,8 +68,9 @@
                         Superior en Desarrollo de Software.
                     </p>
                     <div class="hero-actions">
-                        <a href="#contacto"
-                            class="btn btn-primary">Contactame</a>
+                        <a href="#contacto" class="btn btn-primary">
+                            Contactame
+                        </a>
                         <a href="https://github.com/guidogattas" target="_blank"
                             rel="noopener noreferrer" class="btn btn-secondary">
                             Ver GitHub
@@ -74,7 +78,7 @@
                     </div>
                 </div>
                 <div class="hero-card-wrapper">
-                    <!-- Comentario explicativo 1: Tarjeta retro con foto de perfil real y atributos de accesibilidad -->
+                    <!-- Tarjeta con algunos datos personales y la foto de perfil -->
                     <div class="terminal-card"
                         aria-label="Ficha de presentación">
                         <div class="terminal-bar">
@@ -85,48 +89,65 @@
                         </div>
                         <div class="terminal-body">
                             <div class="profile-photo-container">
-                                <!-- Fotografía de perfil real -->
                                 <img src="images/Guido-IICUcsiR.png"
                                     alt="Fotografía de perfil de Guido Gattás"
                                     class="profile-photo">
                             </div>
-                            <p class="code-line"><span
-                                    class="c-accent">Nombre:</span></p>
+                            <p class="code-line">
+                                <span class="c-accent">Nombre:</span>
+                            </p>
                             <p class="code-output">Guido Gattás</p>
-                            <p class="code-line"><span
-                                    class="c-accent">Ubicación:</span></p>
-                            <p class="code-output">Parque Patricios, CABA,
-                                Argentina</p>
-                            <p class="code-line"><span
-                                    class="c-accent">Especialidad:</span></p>
-                            <p class="code-output">React, Next.js, Node.js y
-                                Bases de Datos</p>
-                            <p class="code-line"><span
-                                    class="c-accent">Idiomas:</span></p>
-                            <p class="code-output">Español (Nativo), Inglés
-                                (Avanzado), Portugués (Avanzado)</p>
+                            <p class="code-line">
+                                <span class="c-accent">Ubicación:</span>
+                            </p>
+                            <p class="code-output">
+                                Parque Patricios, CABA, Argentina
+                            </p>
+                            <p class="code-line">
+                                <span class="c-accent">Especialidad:</span>
+                            </p>
+                            <p class="code-output">
+                                React, Next.js, Node.js y Bases de Datos
+                            </p>
+                            <p class="code-line">
+                                <span class="c-accent">Idiomas:</span>
+                            </p>
+                            <p class="code-output">
+                                Español (Nativo), Inglés (Avanzado), Portugués
+                                (Avanzado)
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- 2. Sección Habilidades -->
+        <!-- Sección donde muestro las tecnologías que conozco -->
         <section id="habilidades" class="skills-section"
             aria-labelledby="skills-title">
             <div class="container">
                 <div class="section-title-wrapper">
-                    <span class="section-badge">ÁREAS DE EXPERIENCIA</span>
-                    <h2 id="skills-title">Habilidades Técnicas</h2>
-                    <p class="section-subtitle">Tecnologías y herramientas con
-                        las que desarrollo proyectos</p>
+                    <span class="section-badge">
+                        ÁREAS DE EXPERIENCIA
+                    </span>
+                    <h2 id="skills-title">
+                        Habilidades Técnicas
+                    </h2>
+                    <p class="section-subtitle">
+                        Tecnologías y herramientas con las que desarrollo
+                        proyectos
+                    </p>
                 </div>
-                <!-- Comentario explicativo 2: CSS Grid aplicado para disponer las categorías de habilidades -->
+                <!-- Uso Grid para acomodar las tarjetas de habilidades y que se adapten al tamaño de la pantalla -->
                 <div class="skills-grid">
                     <article class="retro-card">
-                        <div class="card-tag">DESARROLLO WEB</div>
+                        <div class="card-tag">
+                            DESARROLLO WEB
+                        </div>
                         <h3>Frontend</h3>
-                        <p class="card-desc">Construcción de interfaces de
-                            usuario interactivas, responsivas y accesibles.</p>
+                        <p class="card-desc">
+                            Construcción de interfaces de usuario interactivas,
+                            responsivas y accesibles.
+                        </p>
                         <div class="tags-group">
                             <span class="tag">HTML5</span>
                             <span class="tag">CSS3 / SASS</span>
@@ -139,11 +160,14 @@
                         </div>
                     </article>
                     <article class="retro-card">
-                        <div class="card-tag">SERVIDOR & MOBILE</div>
+                        <div class="card-tag">
+                            SERVIDOR & MOBILE
+                        </div>
                         <h3>Backend y Apps</h3>
-                        <p class="card-desc">Lógica del lado del servidor,
-                            gestión de datos y desarrollo para dispositivos
-                            móviles.</p>
+                        <p class="card-desc">
+                            Lógica del lado del servidor, gestión de datos y
+                            desarrollo para dispositivos móviles.
+                        </p>
                         <div class="tags-group">
                             <span class="tag">Node.js</span>
                             <span class="tag">Express.js</span>
@@ -154,10 +178,13 @@
                         </div>
                     </article>
                     <article class="retro-card">
-                        <div class="card-tag">DISEÑO & GESTIÓN</div>
+                        <div class="card-tag">
+                            DISEÑO & GESTIÓN
+                        </div>
                         <h3>Herramientas</h3>
-                        <p class="card-desc">Diseño de interfaces, edición
-                            digital, control de versiones y trabajo en equipo.
+                        <p class="card-desc">
+                            Diseño de interfaces, edición digital, control de
+                            versiones y trabajo en equipo.
                         </p>
                         <div class="tags-group">
                             <span class="tag">Git & GitHub</span>
@@ -171,53 +198,79 @@
                 </div>
             </div>
         </section>
-        <!-- 3. Sección Trayectoria y Formación -->
+        <!-- Formación y experiencia que quiero mostrar en el portfolio -->
         <section id="trayectoria" class="journey-section"
             aria-labelledby="journey-title">
             <div class="container">
                 <div class="section-title-wrapper">
-                    <span class="section-badge">TRAYECTORIA</span>
-                    <h2 id="journey-title">Formación y Experiencia</h2>
-                    <p class="section-subtitle">Educación formal, cursos
-                        aprobados y recorrido profesional</p>
+                    <span class="section-badge">
+                        TRAYECTORIA
+                    </span>
+                    <h2 id="journey-title">
+                        Formación y Experiencia
+                    </h2>
+                    <p class="section-subtitle">
+                        Educación formal, cursos aprobados y recorrido
+                        profesional
+                    </p>
                 </div>
                 <div class="journey-grid">
                     <article class="retro-card">
-                        <div class="badge-status">En curso</div>
-                        <h3>Tecnicatura Superior en Desarrollo de Software</h3>
-                        <p class="institution">Educación Superior Técnica</p>
-                        <p>Formación integral en programación estructurada y
+                        <div class="badge-status">
+                            En curso
+                        </div>
+                        <h3>
+                            Tecnicatura Superior en Desarrollo de Software
+                        </h3>
+                        <p class="institution">
+                            Educación Superior Técnica
+                        </p>
+                        <p>
+                            Formación integral en programación estructurada y
                             orientada a objetos, bases de datos relacionales,
                             desarrollo web full stack, arquitectura cloud e
-                            ingeniería de software.</p>
+                            ingeniería de software.
+                        </p>
                     </article>
                     <article class="retro-card">
-                        <div class="badge-status">Cursos aprobados</div>
-                        <h3>Cursos y Especializaciones</h3>
-                        <p class="institution">CoderHouse · Codo a Codo · Udemy
+                        <div class="badge-status">
+                            Cursos aprobados
+                        </div>
+                        <h3>
+                            Cursos y Especializaciones
+                        </h3>
+                        <p class="institution">
+                            CoderHouse · Codo a Codo · Udemy
                         </p>
-                        <p>Especializaciones completadas en React JS, React
+                        <p>
+                            Especializaciones completadas en React JS, React
                             Native, Node.js + Express, Big Data y Análisis de
                             Datos (Python y SQL), y herramientas de Inteligencia
-                            Artificial para productividad.</p>
+                            Artificial para productividad.
+                        </p>
                     </article>
                     <article class="retro-card">
-                        <div class="badge-status">2011 — Actualidad</div>
-                        <h3>Administrativo de Recursos Humanos</h3>
-                        <p class="institution">Gobierno de la Ciudad de Buenos
-                            Aires</p>
-                        <p>Coordinación de equipos de trabajo y administración
-                            de bases de datos en SQL[cite: 2]. Gestión integral
-                            de expedientes electrónicos (SADE), oficios
-                            judiciales, control de presentismo, seguimiento de
-                            incidencias y administración de evaluaciones de
-                            desempeño[cite: 2].</p>
+                        <div class="badge-status">
+                            2011 — Actualidad
+                        </div>
+                        <h3>
+                            Administrativo de Recursos Humanos
+                        </h3>
+                        <p class="institution">
+                            Gobierno de la Ciudad de Buenos Aires
+                        </p>
+                        <p>
+                            Coordinación de equipos de trabajo y administración
+                            de bases de datos en SQL. Gestión integral de
+                            expedientes electrónicos (SADE), oficios judiciales,
+                            control de presentismo, seguimiento de incidencias
+                            y administración de evaluaciones de desempeño.
+                        </p>
                     </article>
                 </div>
             </div>
         </section>
-        <!-- 4. Formulario de Contacto (Nativo mailto) -->
-        <!-- Comentario explicativo 3: Formulario estructurado con etiquetas label explícitas asociadas y action mailto nativo -->
+        <!-- Formulario para que puedan contactarme desde la página -->
         <section id="contacto" class="contact-section"
             aria-labelledby="contact-title">
             <div class="container">
@@ -226,36 +279,49 @@
                         <span class="dot dot-red"></span>
                         <span class="dot dot-yellow"></span>
                         <span class="dot dot-green"></span>
-                        <span class="terminal-title">Formulario de
-                            Contacto</span>
+                        <span class="terminal-title">
+                            Formulario de Contacto
+                        </span>
                     </div>
                     <div class="contact-body">
                         <div class="section-title-wrapper">
-                            <h2 id="contact-title">¡Escribime!</h2>
-                            <p class="section-subtitle">Completá el formulario
-                                para enviarme un mensaje directo</p>
+                            <h2 id="contact-title">
+                                ¡Escribime!
+                            </h2>
+                            <p class="section-subtitle">
+                                Completá el formulario para enviarme un mensaje
+                                directo
+                            </p>
                         </div>
-                        <!-- Envío nativo por correo electrónico sin intermediarios -->
+                        <!-- El formulario se envía mediante FormSubmit para recibir los mensajes por correo -->
                         <form class="contact-form"
                             action="https://formsubmit.co/guido.gattas@gmail.com"
                             method="POST">
                             <div class="form-group">
-                                <label for="nombre">Nombre completo</label>
+                                <label for="nombre">
+                                    Nombre completo
+                                </label>
                                 <input type="text" id="nombre" name="Nombre"
                                     placeholder="Tu nombre" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">Correo electrónico</label>
+                                <label for="email">
+                                    Correo electrónico
+                                </label>
                                 <input type="email" id="email" name="Email"
                                     placeholder="tu-email@ejemplo.com" required>
                             </div>
                             <div class="form-group">
-                                <label for="asunto">Asunto</label>
+                                <label for="asunto">
+                                    Asunto
+                                </label>
                                 <input type="text" id="asunto" name="Asunto"
                                     placeholder="Motivo de tu mensaje" required>
                             </div>
                             <div class="form-group">
-                                <label for="mensaje">Mensaje</label>
+                                <label for="mensaje">
+                                    Mensaje
+                                </label>
                                 <textarea id="mensaje" name="Mensaje" rows="4"
                                     placeholder="Escribí tu mensaje acá..."
                                     required></textarea>
@@ -270,18 +336,24 @@
             </div>
         </section>
     </main>
-    <!-- Footer Semántico -->
-    <!-- Comentario explicativo 4: Footer con enlaces directos a perfiles sociales y atributos de seguridad 'rel' -->
+    <!-- Pie de página con los enlaces a mis perfiles -->
     <footer class="footer" role="contentinfo">
         <div class="container footer-content">
-            <p>&copy; 2026 Guido Gattás. Todos los derechos reservados.</p>
+            <p>
+                &copy; 2026 Guido Gattás. Todos los derechos reservados.
+            </p>
             <div class="footer-links">
                 <a href="https://github.com/guidogattas" target="_blank"
-                    rel="noopener noreferrer">GitHub</a>
+                    rel="noopener noreferrer">
+                    GitHub
+                </a>
                 <a href="https://www.linkedin.com/in/guido-gattas/"
-                    target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a
-                    href="mailto:guido.gattas@gmail.com">guido.gattas@gmail.com</a>
+                    target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+                <a href="mailto:guido.gattas@gmail.com">
+                    guido.gattas@gmail.com
+                </a>
             </div>
         </div>
     </footer>
