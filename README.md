@@ -83,6 +83,6 @@ Una vez terminado el proyecto, la landing fue publicada utilizando **Vercel**.
 
 El repositorio es público y contiene los archivos necesarios para ejecutar y visualizar el proyecto.
 
-**Repositorio:** https://github.com/guidogattas
+**Repositorio:** [https://github.com/guidogattas](https://github.com/guidogattas/pfo1-guido-gattas)
 
 **Sitio publicado:** https://pfo1-guido-gattas.vercel.app/
