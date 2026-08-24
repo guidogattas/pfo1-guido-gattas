@@ -4,7 +4,7 @@ Landing page personal realizada para la primera Práctica Formativa Obligatoria 
 
 La página funciona como un pequeño portfolio donde presento mi perfil, mis conocimientos, formación, experiencia y una forma de contacto.
 
-* **Deploy:** https://tu-proyecto.vercel.app *(reemplazar por la URL final de Vercel)*
+* **Deploy:** [https://tu-proyecto.vercel.app *(reemplazar por la URL final de Vercel)](https://github.com/guidogattas/pfo1-guido-gattas)*
 * **GitHub:** https://github.com/guidogattas
 
 ---
