@@ -13,58 +13,58 @@ La página funciona como un pequeño portfolio donde presento mi perfil, mis con
 
 ### HTML
 
-Utilicé HTML5 y traté de mantener una estructura semántica utilizando elementos como `header`, `nav`, `main`, `section`, `article` y `footer`.
+Utilicé HTML5 y organicé la página usando etiquetas semánticas como header, nav, main, section, article y footer.
 
-También agregué atributos `alt` a las imágenes y etiquetas `label` en el formulario para mejorar la accesibilidad.
+Agregué alt a las imágenes y label en los campos del formulario para que la página sea más accesible.
 
-Además, incluí algunos roles ARIA donde me pareció útil, como en la navegación y en las distintas partes principales de la página.
+También agregué algunos atributos ARIA en lugares donde consideré que podían ser útiles, principalmente en la navegación y en las secciones principales.
 
 ### CSS
 
-Para organizar el diseño utilicé **Flexbox y CSS Grid**.
+Para armar el diseño usé principalmente Flexbox y CSS Grid.
 
-Flexbox lo utilicé principalmente para elementos como la navegación, los botones, el footer y las etiquetas de tecnologías.
+Usé Flexbox para organizar la navegación, los botones, el footer y las etiquetas de tecnologías.
 
-CSS Grid lo utilicé para organizar las secciones principales y las tarjetas de habilidades y formación. También utilicé `auto-fit` y `minmax()` para que las tarjetas se adapten al tamaño de la pantalla.
+Usé CSS Grid principalmente en las secciones y en las tarjetas de habilidades y formación. También usé auto-fit y minmax() para que las tarjetas se acomoden según el tamaño de la pantalla.
 
-El diseño es responsive para que la página pueda verse correctamente tanto en computadora como en dispositivos más chicos.
+También adapté el diseño para que funcione tanto en computadora como en pantallas más chicas (tablet o celulares).
 
 También utilicé variables CSS para guardar colores, tipografías y algunos valores que se repiten, lo que facilita modificar el diseño.
 
 ### Tipografía y estilo
 
-Elegí un diseño oscuro y moderno, intentando mantener una buena lectura y contraste entre los diferentes elementos.
+Elegí un diseño oscuro porque es el estilo que quería para mi portfolio. También traté de mantener un buen contraste para que los textos se puedan leer fácilmente.
 
-Utilicé **Montserrat** para los títulos y **Inter** para el contenido general. La idea fue generar una diferencia clara entre títulos y textos sin que la página quede demasiado cargada.
+Para los títulos usé Montserrat y para el resto del contenido Inter (me fijé cuál era la fuente más utilizada actualmente). De esta forma puedo diferenciar mejor los títulos del resto de los textos sin recargar demasiado la página.
 
-También agregué transiciones y animaciones pequeñas para darle algo más de interacción a la página sin afectar su funcionamiento.
+Agregué algunas transiciones y animaciones simples para darle un poco más de interacción a la página, pero sin hacer que sean demasiado llamativas.
 
 ---
 
 ## Uso de Inteligencia Artificial
 
-Para realizar este proyecto utilicé **Gemini (Google)** como herramienta de apoyo.
+Durante el desarrollo del proyecto utilicé Gemini (Google) como herramienta de apoyo.
 
-El plan utilizado fue el **gratuito** y ya tenía experiencia previa utilizando esta herramienta, principalmente para consultar dudas relacionadas con programación y desarrollo de software.
+Utilicé la versión gratuita de Gemini. Ya había usado esta herramienta anteriormente, principalmente para consultar dudas de programación y desarrollo de software.
 
-La utilicé principalmente para:
+La usé principalmente para:
 
 * Consultar ideas para la estructura inicial de la página.
 * Obtener una propuesta inicial para el HTML y CSS.
 * Conseguir una opción de envío de formulario sin necesidad de BBDD
 * Revisar posibles mejoras en la estructura y accesibilidad.
 
-El código generado inicialmente no fue utilizado directamente sin modificaciones. Fui revisándolo y adaptándolo a las necesidades de mi proyecto.
+El código que obtuve como punto de partida lo fui revisando y modificando. No lo utilicé tal cual, sino que lo adapté a lo que necesitaba para la página.
 
-Entre los cambios que realicé están:
+A partir de esas sugerencias fui haciendo distintos cambios, por ejemplo:
 
-* Modificar la estructura del HTML.
-* Revisar la semántica y el orden de los encabezados.
-* Cambiar colores, tamaños, espacios y estilos, había problemas con algunos elementos que se salían de la pantalla.
-* Adaptar el diseño a la estética que quería para mi portfolio.
-* Incorporar mis propios datos de formación, cursos y experiencia laboral.
-* Revisar el código y modificarlo cuando no se ajustaba a lo que necesitaba.
-* Agregar y ajustar los elementos de accesibilidad y responsive.
+* Cambié parte de la estructura del HTML.
+* Revisé la semántica y el orden de los encabezados.
+* Modifiqué colores, tamaños y espacios. También tuve que corregir algunos elementos que se salían de la pantalla.
+* Fui adaptando el diseño al estilo que quería para mi portfolio.
+* Agregué mis datos de formación, cursos y experiencia laboral.
+* Revisé el código y cambié algunas partes cuando no se adaptaban a lo que necesitaba.
+* Ajusté algunos aspectos de accesibilidad y del diseño responsive.
 
 La información personal incluida en la página corresponde a mis propios datos y fue incorporada por mí.
 
